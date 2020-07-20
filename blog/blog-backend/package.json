@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "dotenv": "^8.2.0",
     "eslint-config-prettier": "^6.11.0",
     "esm": "^3.2.25",
