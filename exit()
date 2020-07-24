@@ -1,0 +1,21 @@
+[33m76305a5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Add env settings
+[33m1b74903[m Add about JWT
+[33m0073e9c[m add body validation and list pagination
+[33m0fe31e0[m add REST API with MONGO
+[33m1aed7a2[m add about node backend with koa
+[33mb74241c[m about server side rendering
+[33m6de1bdd[m Commit before eject
+[33m49a7aec[m add code split
+[33m06d3eb7[m about redux-middleware: redux-thunk, redux-saga
+[33m2265331[m redux with react tutorial
+[33meb87f68[m add redux with vanilla js
+[33m0f6d711[m Add react context tutorial
+[33mf1e5e9e[m add newsviewer app with react router
+[33mb344626[m react router tutorial
+[33m4351b20[m add immer
+[33md22f963[m without immer
+[33m9872df1[m optimize rendering with react-virtualized
+[33m171be6c[m optimize rendering with useReducer
+[33m32dd223[m delete and toggle todo func
+[33mdcdf604[m add todo func
+[33m7eec066[m Add components without func
