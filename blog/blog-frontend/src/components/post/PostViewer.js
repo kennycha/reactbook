@@ -4,6 +4,7 @@ import palette from '../../lib/styles/palette';
 import Responsive from '../common/Responsive';
 import SubInfo from '../common/SubInfo';
 import Tags from '../common/Tags';
+import { Helmet } from 'react-helmet-async';
 
 const PostViewerBlock = styled(Responsive)`
   margin-top: 4rem;
@@ -23,7 +24,7 @@ const PostContent = styled.div`
   color: ${palette.gray[8]};
 `;
 
-const PostViewer = ({ post, error, loading }) => {
+const PostViewer = ({ post, error, loading, actionButtons }) => {
   if (error) {
     if (error.response && error.response.status === 404) {
       return <PostViewerBlock>Post doesn't exist</PostViewerBlock>;
@@ -39,6 +40,11 @@ const PostViewer = ({ post, error, loading }) => {
 
   return (
     <PostViewerBlock>
+      <Helmet>
+        <title>
+          {title.length < 12 ? title : `${title.slice(0, 12)}...`} - REACTERS
+        </title>
+      </Helmet>
       <PostHead>
         <h1>{title}</h1>
         <SubInfo
@@ -48,6 +54,7 @@ const PostViewer = ({ post, error, loading }) => {
         />
         <Tags tags={tags} />
       </PostHead>
+      {actionButtons}
       <PostContent
         dangerouslySetInnerHTML={{
           __html: body,
